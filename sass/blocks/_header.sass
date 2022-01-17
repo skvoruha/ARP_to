@@ -1,0 +1,135 @@
+.container
+  max-width: 1108px
+  margin: 0 auto
+.home
+  background-image: url(../image/fone.png)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center 100%
+  position: relative
+  height: 100%
+  z-index: 3
+  &::before
+    z-index: -2
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, #5ECFFF -3.19%, rgba(0, 160, 227, 0.5) 100%)
+  &::after
+    display: none
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 23px
+    right: 0
+    height: 274px
+    background: #fff
+    z-index: -1
+
+header
+  position: relative
+
+.navbar
+  display: flex
+  justify-content: space-between
+  &__logo
+    display: flex
+    align-items: center
+    justify-content: center
+    min-width: 96px
+    min-height: 139px
+    background-color: #000
+    cursor: pointer
+    &--svg
+      fill: white
+    &:hover
+      background-color: #5ECFFF
+      & .navbar__logo--svg
+        fill: black
+  &__social
+    display: flex
+    list-style: none
+    margin-bottom: 45px
+    padding-top: 19px
+    margin-top: 0
+    margin-left: 40px
+    padding-left: 0
+    &--link
+      margin-left: 16px
+    &--svg
+      & svg
+        fill: black
+        &:hover
+          fill: #5ECFFF
+    &:hover
+
+      background-color: white
+  &__page
+    display: flex
+    font-family: Proxima Nova
+    font-size: 14px
+    font-weight: 600
+    line-height: 17px
+    list-style: none
+    margin-right: -10px
+
+  &__link
+    position: relative
+    height: 30px
+    & a
+      margin-left: 50px
+      padding: 4px 10px
+      text-decoration: none
+      color: #000
+      font-size: 14px
+      line-height: 17px
+      text-transform: uppercase
+      &:hover
+        color: #fff
+        background-color: #000
+  &__navigation
+    display: flex
+    flex-direction: column
+    place-items: flex-end
+  &__languages
+    margin-left: 34px
+    font-family: Manrope
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 16px
+.header
+  padding-bottom: 66px
+.drop
+  position: absolute
+  padding: 0
+  margin: 0
+  top: 30px
+  white-space: nowrap
+  left: 60px
+  z-index: 4
+  display: none
+  &__menu
+    list-style: none
+    margin-bottom: 10px
+    & a
+      margin-left: 0
+.home__after
+  display: none
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 23px
+  right: 0
+  height: 274px
+  background: #fff
+  z-index: -1
+  &--fone
+    display: block

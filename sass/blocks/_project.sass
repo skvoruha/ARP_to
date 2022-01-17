@@ -1,0 +1,197 @@
+.project
+  width: 100%
+  margin-bottom: 277px
+  &__wrapper
+    display: flex
+
+  &__left
+    min-height: 1237px
+    width: 43%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__right
+    display: flex
+    width: 57%
+    flex-direction: column
+    &--wrapper
+      margin-top: 144px
+    &--subtitle
+      font-family: Proxima Nova
+      font-style: normal
+      font-weight: bold
+      font-size: 14px
+      line-height: 22px
+      letter-spacing: 0.1em
+      margin-bottom: 6px
+    &--title
+      margin-top: 0
+      font-family: Proxima Nova
+      font-style: normal
+      font-weight: 600
+      font-size: 60px
+      line-height: 110%
+      margin-bottom: 30px
+    &--text
+      font-family: Proxima Nova
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 130%
+      margin-bottom: 110px
+.experience
+  position: relative
+  align-self: flex-start
+  margin-top: 299px
+.employees
+  align-self: center
+  position: relative
+  align-items: center
+  display: flex
+  flex-direction: column
+  margin-left: 30px
+.service
+  display: flex
+  margin-left: -21px
+  margin-bottom: 110px
+.contact
+  display: flex
+  position: relative
+  align-self: end
+  margin-right: 29px
+.side
+  display: flex
+  overflow: hidden
+  position: relative
+  &__text
+    writing-mode: vertical-rl
+    transform-origin: center
+    transform: rotate(-180deg)
+    text-align: end
+    font-family: Proxima Nova
+    font-style: normal
+    font-weight: normal
+    font-size: 10px
+    line-height: 20px
+    text-transform: uppercase
+  &__figcaption
+    padding: 30px 20px
+    backface-visibility: hidden
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    text-align: left
+    &::after
+      pointer-events: none
+    &::before
+      pointer-events: none
+    &--right
+      text-align: right
+  &__img
+    position: relative
+    display: block
+    min-height: 100%
+    transition: opacity 0.35s, transform 0.35s
+    backface-visibility: hidden
+    &--title
+      font-family: Proxima Nova
+      font-style: normal
+      font-weight: bold
+      font-size: 60px
+      line-height: 73px
+      margin-bottom: 10px
+      margin-top: 0
+    &--text
+      font-family: Proxima Nova
+      font-style: normal
+      font-weight: normal
+      font-size: 10px
+      line-height: 20px
+    &--hover
+      margin: 0
+      opacity: 0
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s
+      transition: opacity 0.35s, transform 0.35s
+      -webkit-transform: translate3d(100%,0,0)
+      transform: translate3d(100%,0,0)
+      &:hover
+        opacity: 1
+        -webkit-transform: translate3d(0,0,0)
+        transform: translate3d(0,0,0)
+  &__figure
+    position: relative
+    z-index: 1
+    display: inline-block
+    overflow: hidden
+    background: #43C7FF
+    text-align: center
+    cursor: pointer
+    &:hover
+      & img
+        transform: translate3d(0,0,0)
+        opacity: 0.2
+      & .side__img--hover
+        transform: translate3d(0,0,0)
+        opacity: 1
+
+.rectangle
+  border: 2px solid #000000
+  padding: 16px
+  height: max-content
+  width: max-content
+  cursor: pointer
+  text-decoration: none
+  &:hover
+    border: 2px dashed #000000
+    z-index: 2
+  &__title
+    font-family: Proxima Nova
+    font-style: normal
+    font-weight: 300
+    font-size: 20px
+    line-height: 110%
+    max-width: 220px
+    margin-top: 0
+    margin-bottom: 16px
+    &--experience
+      margin-top: 20px
+
+  &__link
+    font-family: Proxima Nova
+    font-style: normal
+    font-weight: 600
+    font-size: 12px
+    line-height: 20px
+    text-transform: uppercase
+    max-width: 160px
+  &__experience
+    position: absolute
+    bottom: -113px
+    right: -27px
+    color: #000
+  &__employees
+    margin-left: 36px
+    background: #000000
+    color: #FFF
+    &:hover
+      & .rectangle__title
+        &--employees
+          color: #00A0E3
+  &__service
+    background: #000000
+    color: #FFF
+    align-self: center
+    margin-top: -27px
+    width: 283px
+    &:hover
+      & .rectangle__title
+        &--service
+          color: #00A0E3
+  &__contact
+
+    position: absolute
+    top: 25%
+    left: -79%
+    width: 290px
